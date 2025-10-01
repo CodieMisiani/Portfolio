@@ -3,8 +3,8 @@ import React from "react";
 const About = () => {
   return (
     <div>
-      <div className="leading-loose">
-        <p className="mt-[32px]">
+      <div className="leading-loose mb-96">
+        <p className="mt-[8px] text-2xl font-bold leading-tight title-color ">
           I’m a creative problem solver who’s passionate about building
           meaningful, user-centered digital experiences.I love taking on
           challenges that involve complex problem-solving and transforming them
