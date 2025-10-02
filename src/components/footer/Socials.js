@@ -1,18 +1,22 @@
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import { MdCallMade } from "react-icons/md";
 
 const Social = () => {
   return (
     <div className="flex items-center w-full mt-[32px] md:mt-[72px]">
-      <div className="w-[48px] h-[48px] mr-[35px] rounded-full bg-gray relative">
-        <span className="box-border block overflow-hidden bg-none relative border-0 m-0 p-0"></span>
+      {/* Profile Picture */}
+      <div className="w-12 h-12 mr-6 rounded-full overflow-hidden border border-gray-600 flex-shrink-0">
         <img
-          alt=""
           src="/profile-pic.jpg"
-          className="rounded-full absolute top-0 left-0 bottom-0 right-0 box-border"
+          alt="Nimrod Misiani - Profile"
+          className="w-full h-full object-cover"
+          loading="lazy"
         />
       </div>
+
+      {/* Social Links */}
       <ul className="flex -mx-[16px] text-white">
+        {/* LinkedIn */}
         <li className="mx-[16px] text-white">
           <a
             href="https://www.linkedin.com/in/nimrod-misiani/"
@@ -27,6 +31,8 @@ const Social = () => {
             </span>
           </a>
         </li>
+
+        {/* GitHub */}
         <li className="mx-[16px] text-white">
           <a
             href="https://github.com/CodieMisiani"
@@ -35,7 +41,22 @@ const Social = () => {
             target="_blank"
           >
             <AiFillGithub className="inline" />
-            <span className="text-sm ml-2">GitHub</span>
+            <span className="ml-2">GitHub</span>
+            <span className="w-[16px] p-[2px] ml-2">
+              <MdCallMade className="inline" />
+            </span>
+          </a>
+        </li>
+
+        {/* Gmail */}
+        <li className="mx-[16px] text-white">
+          <a
+            href="mailto:nimrodmisiani42@gmail.com"
+            className="flex items-center"
+            rel="noopener noreferrer"
+          >
+            <AiOutlineMail className="inline" />
+            <span className="ml-2">Gmail</span>
             <span className="w-[16px] p-[2px] ml-2">
               <MdCallMade className="inline" />
             </span>
