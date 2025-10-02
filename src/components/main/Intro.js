@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 const Intro = () => {
   const titles = [
     "Software Engineer",
-    "Frontend Engineer",
-    "Backend Engineer",
+    "Front-end Engineer",
+    "Back-end Engineer",
     "@Codie Misiani",
     "Problem Solver",
   ];
