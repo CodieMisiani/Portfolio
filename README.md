@@ -37,6 +37,4 @@ Project is: _in progress_
 Design inspiration: [_NicolasMzrd_](https://dribbble.com/NicolasMzrd)
 
 
-## Contact
-Created by [@iPankajKr](https://github.com/iPankajKr) - feel free to contact me!
 
