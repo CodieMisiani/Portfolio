@@ -1,4 +1,4 @@
-# Personal Portfolio website using React
+# Personal Portfolio website using React....
 > Personal portfolio website built using React and Tailwind CSS.
 > Live demo [_here_](https://ipankajkumar.com/). 
 
@@ -37,6 +37,4 @@ Project is: _in progress_
 Design inspiration: [_NicolasMzrd_](https://dribbble.com/NicolasMzrd)
 
 
-## Contact
-Created by [@iPankajKr](https://github.com/iPankajKr) - feel free to contact me!
 
