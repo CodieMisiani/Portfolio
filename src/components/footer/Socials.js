@@ -7,7 +7,7 @@ const Social = () => {
       {/* Profile Picture */}
       <div className="w-12 h-12 mr-6 rounded-full overflow-hidden border border-gray-600 flex-shrink-0">
         <img
-          src="/profile-pic.jpg"
+          src="/favicon2.jpeg"
           alt="Nimrod Misiani - Profile"
           className="w-full h-full object-cover"
           loading="lazy"
