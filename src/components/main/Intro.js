@@ -1,34 +1,24 @@
 import React, { useState, useEffect } from "react";
+import { personalInfo } from "../../config/personal";
 
 const Intro = () => {
-  const titles = [
-    "Software Engineer",
-    "Front-end Engineer",
-    "Back-end Engineer",
-    "@Codie Misiani",
-    "Problem Solver",
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0); // Which title we are on
-  const [displayText, setDisplayText] = useState(""); // What is currently shown
-  const [isDeleting, setIsDeleting] = useState(false); // Whether we are deleting or typing
+  const titles = personalInfo.titles; // ✅ use titles from personalInfo
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const currentTitle = titles[currentIndex]; // Current phrase
-    let typingSpeed = isDeleting ? 50 : 100; // Speed: faster when deleting
+    const currentTitle = titles[currentIndex];
+    let typingSpeed = isDeleting ? 50 : 100;
 
     const handleTyping = () => {
       if (!isDeleting && displayText.length < currentTitle.length) {
-        // Typing characters
         setDisplayText(currentTitle.slice(0, displayText.length + 1));
       } else if (isDeleting && displayText.length > 0) {
-        // Deleting characters
         setDisplayText(currentTitle.slice(0, displayText.length - 1));
       } else if (!isDeleting && displayText.length === currentTitle.length) {
-        // Pause before deleting
         setTimeout(() => setIsDeleting(true), 1500);
       } else if (isDeleting && displayText.length === 0) {
-        // Move to next title
         setIsDeleting(false);
         setCurrentIndex((prevIndex) => (prevIndex + 1) % titles.length);
       }
@@ -45,11 +35,12 @@ const Intro = () => {
         role="heading"
         aria-level="1"
       >
-        Nimrod Misiani
+        {personalInfo.name} {/* ✅ dynamic name */}
       </h1>
+
       <h2 className="mt-[16px] sm:text-2xl text-[20px] font-semibold leading-tight title-color">
         {displayText}
-        <span className="animate-pulse">|</span> {/* Blinking cursor */}
+        <span className="animate-pulse">|</span> {/* blinking cursor */}
       </h2>
     </div>
   );
