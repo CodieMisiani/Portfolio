@@ -30,6 +30,7 @@ const About = () => {
         <button
           className="text-blue-500 font-semibold ml-2"
           onClick={() => setIsExpanded(!isExpanded)}
+          aria-label={isExpanded ? "Show less about me" : "Read more about me"}
         >
           {isExpanded ? "Show less" : "Read more"}
         </button>
