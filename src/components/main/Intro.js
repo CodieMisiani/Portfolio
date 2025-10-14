@@ -40,7 +40,11 @@ const Intro = () => {
 
   return (
     <div>
-      <h1 className="text-4xl font-bold leading-tight lg:text-6xl lg:leading-none title-color">
+      <h1
+        className="text-4xl font-bold leading-tight lg:text-6xl lg:leading-none title-color"
+        role="heading"
+        aria-level="1"
+      >
         Nimrod Misiani
       </h1>
       <h2 className="mt-[16px] sm:text-2xl text-[20px] font-semibold leading-tight title-color">
